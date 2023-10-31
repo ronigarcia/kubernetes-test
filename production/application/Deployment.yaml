@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpbin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: httpbin
+  template:
+    metadata:
+      labels:
+        app: httpbin
+    spec:
+      containers:
+      - name: httbin
+        image: kennethreitz/httpbin:latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 512m
+          requests:
+            cpu: 200m
