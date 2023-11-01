@@ -52,7 +52,7 @@ The repository is organized as follows:
 1. Clone the repository:
 
 ```bash
-$ git clone https://github.com/your-username/kubernetes-manifests-test.git
+$ git clone https://github.com/ronigarcia/kubernetes-test
 
 $ cd kubernetes-test
 ```
